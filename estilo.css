@@ -1,0 +1,19 @@
+body{
+    background-color: #ffffe1;
+}
+
+.logo{
+    margin:10px auto;
+    display:block;
+}
+
+.encabezado{
+    background-color: #2e6b61;
+}
+
+.sidebar{
+    background-color: #5aa492;
+}
+.navigation{
+    background-color: #5aa492;
+}
