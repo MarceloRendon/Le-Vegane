@@ -1,19 +1,89 @@
-body{
-    background-color: #ffffe1;
+/*
+	IMPORTA FUENTE DE GOOGLE FONTS PARA UTILIZAR
+*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*
+	CSS de fondo de la página
+*/
+html {
+	background-color: #ffffe1;
 }
 
+
+/*
+	CSS de contenido de la página,
+	todo lo que se haga queda dentro.
+*/
+body{
+    background-color: #ffffe1;
+    width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*
+	CSS correspondiente al logo
+*/
+
 .logo{
-    margin:10px auto;
-    display:block;
+    margin: auto;
+    display: block;
 }
 
 .encabezado{
     background-color: #2e6b61;
 }
 
+/*
+	CSS correspondiente al menú nav
+*/
+
+.navigation {
+    background-color: #5aa492;
+    width: 100%;
+    display: flex;
+}
+
+.navigation a{
+    display: block;
+    color: white;
+    height: 10px;
+    text-decoration: none;
+    padding: 50px;
+    border-right: 1px solid #2e6b61;
+}
+
+.navigation a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .navigation {
+    display: table;
+}
+
+/*
+	CSS correspondiente a todo lo que contenga el CLASS "contenedor"
+*/
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+	CSS correspondiente a algo de sidebar que no se ha hecho nada con eso xd
+*/
+
 .sidebar{
     background-color: #5aa492;
 }
-.navigation{
-    background-color: #5aa492;
-}
+
+
+
