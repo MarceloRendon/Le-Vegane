@@ -1,19 +1,20 @@
+* {
+    /*espaciado interno y externo suman un solo espaciado */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*afecta al body*/
 body{
-    background-color: #ffffe1;
+    background-color: #0b352e;
+    color: #ffffe1;
+
 }
 
-.logo{
-    margin:10px auto;
-    display:block;
-}
-
-.encabezado{
-    background-color: #2e6b61;
-}
-
-.sidebar{
-    background-color: #5aa492;
-}
-.navigation{
-    background-color: #5aa492;
+/*afecta a todos los enlaces*/
+a{
+    color: #ffffe1;
+    /*quita subrayado del link*/
+    text-decoration: none;
 }
