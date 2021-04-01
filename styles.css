@@ -92,6 +92,7 @@ ul{
 
 }
 
+/*clase boton*/
 .btn{
     cursor: pointer;
     display: inline-block;
@@ -102,5 +103,19 @@ ul{
     color: #ffffe1;
     font-size: 15px;
     border: 1px solid #fff;
+    margin: 10px 0;
 
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.showcase h2{
+    margin-bottom: 10px;
+
+}
+
+.showcase p{
+    margin-bottom: 10px;
 }
