@@ -7,7 +7,7 @@
 	CSS de fondo de la página
 */
 html {
-	background-color: #ffffe1;
+	background-color: #ffffff;
 }
 
 
@@ -16,8 +16,8 @@ html {
 	todo lo que se haga queda dentro.
 */
 body{
-    background-color: #ffffe1;
-    width: 80%;
+    background-color: #ffffff;
+    width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	font-family: 'Ubuntu', sans-serif;
@@ -30,10 +30,13 @@ body{
 .logo{
     margin: auto;
     display: block;
+    background-color:rgba(206, 255, 247, 0.01);
 }
 
 .encabezado{
     background-color: #2e6b61;
+    background-image: url("/images/pictures/banner.jpg");
+    background-position: center;
 }
 
 /*
@@ -44,15 +47,8 @@ body{
     background-color: #5aa492;
     width: 100%;
     display: flex;
-}
-
-.navigation a{
-    display: block;
-    color: white;
-    height: 10px;
-    text-decoration: none;
-    padding: 50px;
-    border-right: 1px solid #2e6b61;
+    justify-content: center;
+    
 }
 
 .navigation a:hover{
@@ -63,12 +59,38 @@ header .navigation {
     display: table;
 }
 
+nav{
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    height: 10px;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-right: 1px solid #2e6b61;
+    border-left: 1px solid #2e6b61;
+}
+
 /*
 	CSS correspondiente a todo lo que contenga el CLASS "contenedor"
 */
 
 .contenedor {
-    width: 100%;
+    width: 80%;
     margin: auto;
     background-color: white;
     display: flex;
