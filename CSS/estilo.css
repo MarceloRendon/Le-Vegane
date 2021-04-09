@@ -61,7 +61,7 @@ body{
 .preguntas{
     border: 1px solid #2e6b61;
     width: 40%;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -81,4 +81,28 @@ footer{
 
 .copy {
     font-size: 20px;
+}
+
+/*
+    CSS correspondiente al section
+*/
+
+section {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    align-content: center;
+}
+
+#info {
+    color: black;
+    text-align: center;
+    align-content: center;
+}
+
+.info-us img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border: 5px solid white;
 }
