@@ -2,23 +2,8 @@
 	CSS correspondiente al menú nav
 */
 
-.navigation {
-    background-color: #5aa492;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.navigation a:hover{
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-header .navigation {
-    display: table;
-}
-
-nav{
+/*Agrega opción que menu bar se apegue a pantalla al hacer scroll*/
+.container{
     position: sticky;
     top: 0;
 }
@@ -27,19 +12,55 @@ nav ul{
     display: flex;
 }
 
-nav ul li{
+a{
+    color: #ffffe1;
+    /*quita subrayado del link*/
+    text-decoration: none;
+}
+
+/*quita los estilos por defecto que tienen los ul*/
+ul{
     list-style: none;
 }
 
-nav ul li a{
-    display: block;
-    color: white;
-    height: 10px;
-    text-decoration: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 50px;
-    padding-left: 50px;
-    border-right: 1px solid #2e6b61;
-    border-left: 1px solid #2e6b61;
+/*centrar la clase container */
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    /*centrar el elemento*/
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+/*estilos de la navegacion*/
+.nav-main{
+    font-size: 17px;
+    /*permite organizar los elementos*/
+    display: flex;
+    /*utilizando todo el ancho disponible*/
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /*padding: 20px 0;*/
+}
+
+.nav-brand{
+    width: 50px;
+    justify-content: right;
+}
+
+.nav-main ul li{
+    /*separa los elementos inicio receta, etc por 10 px*/
+    padding: 10px;
+}
+/*separa los elementos enlaces del nav */
+.nav-main ul li a{
+    padding: 15px;
+}
+/*un subrayado a los elementos del nav*/
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #ffffe1;
 }
