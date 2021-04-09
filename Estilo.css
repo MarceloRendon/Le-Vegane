@@ -1,0 +1,260 @@
+/*INICIO SECCION DE BODDYS*/    
+    /*Estilo del body recetas*/
+.bodyrecetas
+{
+    font-family: 'Oswald', sans-serif;
+    background-image:url(Imagenes/tablados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /*Tamano fuente del subtitulo*/
+#subtitulo
+{
+    font-size: 1.2em;
+}
+    /*Estilo del body entradas*/
+.bodyentradas
+{
+    font-family: 'Oswald', sans-serif;
+    background-image:url(Imagenes/tablatres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /*Estilo del body frios*/
+.bodyfrios
+{
+    font-family: 'Oswald', sans-serif;
+    background-image:url(Imagenes/tabla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /*Estilo del body calientes*/
+.bodycalientes
+{
+    font-family: 'Oswald', sans-serif;
+    background-image:url(Imagenes/tabla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /*Estilo del body postres*/
+.bodypostres
+{
+    font-family: 'Oswald', sans-serif;
+    background-image:url(Imagenes/tabla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /*Estilo del body snacks*/
+.bodysnacks
+{
+    font-family: 'Oswald', sans-serif;
+    background-image:url(Imagenes/tabla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*FIN SECCION DE BODDYS*/  
+/*INICIO SECCION DE TITULOS*/      
+
+    /*Estilo del div titulo y subtitulo*/
+.receta
+{  
+    font-size: 1.5em; 
+    color:whitesmoke;
+    text-align: center;
+    background-color: #2e6b61;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    border-style: dashed;
+    height: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /*Estilo del div titulo*/
+.entradas
+{  
+    font-size: 1.5em; 
+    color:whitesmoke;
+    text-align: center;
+    background-color: #2e6b61 ;
+    background-size: cover;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    height: 200px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+    /*Estilo del div titulo*/
+.frios
+{  
+    font-size: 1.5em; 
+    color:whitesmoke;
+    text-align: center;
+    background-color: #2e6b61 ;
+    background-size: cover;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    height: 200px;
+    width: 40%;
+    margin-left: inherit;
+    margin-right: auto;
+}
+    /*Estilo del div titulo*/
+.calientes
+{  
+    font-size: 1.5em; 
+    color:whitesmoke;
+    text-align: center;
+    background-color: #2e6b61 ;
+    background-size: cover;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    height: 200px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+    /*Estilo del div titulo*/
+.postres
+{  
+    font-size: 1.5em; 
+    color:whitesmoke;
+    text-align: center;
+    background-color: #2e6b61 ;
+    background-size: cover;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    height: 200px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+    /*Estilo del div titulo*/
+.snacks
+{  
+    font-size: 1.5em; 
+    color:whitesmoke;
+    text-align: center;
+    background-color: #2e6b61 ;
+    background-size: cover;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    height: 200px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+/*FIN SECCION DE TITULOS*/
+
+/*INICIO SECCION DE TABLAS*/    
+
+    /*Estilo de la tabla recetas*/
+.tablerecetas
+{      
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+    /*Estilo de la tabla entradas*/
+.tableentradas
+{      
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+    /*Estilo de la tabla platos frios*/
+.tablefrios
+{      
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    width: 30%;
+    margin-left:inherit;
+    margin-right: auto;
+}
+    /*Estilo de la tabla platos calientes*/
+.tablecalientes
+{      
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+    /*Estilo de la tabla postres*/
+.tablepostres
+{      
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+    /*Estilo de la tabla snacks*/
+.tablesnacks
+{      
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    margin: 40px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: inherit;
+}
+/*FIN SECCION DE TABLAS*/ 
+
+/*NO ME ACUERDO QUE HICE ACA :D*/
+img
+{
+    object-fit: cover;
+}
+/*INICIO ESTILO DE LOS LINKS DE REDIRECCION*/
+a
+{
+    color: black;
+    font-size: 26px;
+}
+
+a:link
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: dodgerblue;
+}
+
+a:hover
+{
+    color: dimgrey;
+    text-decoration: overline;
+}
