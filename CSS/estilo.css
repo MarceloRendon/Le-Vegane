@@ -22,6 +22,13 @@ body{
 	padding: 0;
 	font-family: 'Ubuntu', sans-serif;
 }
+/*
+    Se quita el margin y padding de hr para evitar que se pegue con la primera imágen
+*/
+hr{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
 /*
 	CSS correspondiente al logo
@@ -168,14 +175,26 @@ article img{
 .showcase{
     width: 100%;
     height: 550px;
-    /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: url(/images/showcase/showcase11.jpg) no-repeat center center/cover;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
 
+.showcase1-bckgrnd{
+    /*background-image: url("/images/showcase/showcase11.jpg"); */
+    background: url(/images/showcase/showcase11.jpg) no-repeat center center/cover;
+}
+
+.showcase2-bckgrnd{
+    /*background-image: url("/images/showcase/showcase11.jpg"); */
+    background: url(/images/showcase/showcase7.jpg) no-repeat center center/cover;
+}
+
+.showcase3-bckgrnd{
+    /*background-image: url("/images/showcase/showcase11.jpg"); */
+    background: url(/images/showcase/showcase1.jpeg) no-repeat center center/cover;
 }
 
 .btn{
@@ -196,15 +215,17 @@ article img{
     opacity: .7;
 }
 
-.showcase h2{
+.showcase h2, .showcase2 h2{
     margin-bottom: 10px;
     color: #ffffe1;
 
 }
 
-.showcase p{
+.showcase p, .showcase2 p{
     margin-bottom: 10px;
     color: #ffffe1;
+    width: 70%;
+    text-align: center;
 }
 
 /*-------------------------- estilos de las tarjetas de tips html --------------*/
