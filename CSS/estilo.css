@@ -184,17 +184,17 @@ article img{
 
 .showcase1-bckgrnd{
     /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: url(/images/showcase/showcase11.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/showcase/showcase11.jpg) no-repeat center center/cover;
 }
 
 .showcase2-bckgrnd{
     /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: url(/images/showcase/showcase7.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(/images/showcase/showcase7.jpg) no-repeat center center/cover;
 }
 
 .showcase3-bckgrnd{
     /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: url(/images/showcase/showcase1.jpeg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/images/showcase/showcase1.jpeg) no-repeat center center/cover;
 }
 
 .btn{
@@ -226,6 +226,7 @@ article img{
     color: #ffffe1;
     width: 70%;
     text-align: center;
+    
 }
 
 /*-------------------------- estilos de las tarjetas de tips html --------------*/
