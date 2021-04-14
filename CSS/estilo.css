@@ -42,7 +42,7 @@ hr{
 
 .encabezado{
     background-color: #2e6b61;
-    background-image: url("/images/pictures/banner.jpg");
+    background-image: url("../images/pictures/banner.jpg");
     background-position: center;
 }
 
@@ -184,17 +184,17 @@ article img{
 
 .showcase1-bckgrnd{
     /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/showcase/showcase11.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/showcase/showcase11.jpg) no-repeat center center/cover;
 }
 
 .showcase2-bckgrnd{
     /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(/images/showcase/showcase7.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/showcase/showcase7.jpg) no-repeat center center/cover;
 }
 
 .showcase3-bckgrnd{
     /*background-image: url("/images/showcase/showcase11.jpg"); */
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/images/showcase/showcase1.jpeg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/showcase/showcase1.jpeg) no-repeat center center/cover;
 }
 
 .btn{
