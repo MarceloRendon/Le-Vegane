@@ -2,7 +2,12 @@
 	IMPORTA FUENTE DE GOOGLE FONTS PARA UTILIZAR
 */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 /*
 	CSS de fondo de la página
 */
