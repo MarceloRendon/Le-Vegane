@@ -3815,6 +3815,12 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+.navbar-default {
+  background: none;
+}
+.navbar {
+  background: none;
+}
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
