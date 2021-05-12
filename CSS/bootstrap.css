@@ -3815,12 +3815,6 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-.navbar-default {
-  background: none;
-}
-.navbar {
-  background: none;
-}
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -7404,10 +7398,12 @@ textarea.form-control-lg {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  
 }
 
 .bg-dark {
   background-color: #212529 !important;
+  opacity: 0.85; 
 }
 
 .bg-body {

@@ -292,4 +292,10 @@ article img{
     width: 90%;
     margin: auto;
   }
-  
+
+#nav1
+{  
+    background-color:#F00; /*whichever you want*/
+    opacity: 0.5; 
+    filter:(opacity=50);       
+}
