@@ -304,3 +304,11 @@ article img{
     opacity: 0.5; 
     filter:(opacity=50);       
 }
+
+/*
+    CSS FORMULARIO CONTACTO
+*/
+.form-contact{
+    background-color: #FFFFFF;
+    width: 100%;
+}
