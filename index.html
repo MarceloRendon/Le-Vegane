@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Archivos externos -->
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/estilo-menu.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/bootstrap.css'>
+
+    <!-- CDN de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- cdn de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--icono sobre el titulo de la pagina-->
+    <link rel="shortcut icon" href="../images/logos/icono1.png">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            var mensaje = "";
+            $("#alerta").hide();
+
+            $("#formulario").submit(function () {
+                
+                if ($("#nombre").val().trim().length == 0) {
+                    $("#nombre:first").addClass("is-invalid");
+                    mensaje = "debe completar los campos marcados con *";
+                }
+
+                if ($("#correo").val().trim().length == 0) {
+                    $("#correo:first").addClass("is-invalid");
+                    mensaje = "debe completar los campos marcados con *";
+                }
+
+                if ($("#mensaje").val().trim().length < 20) {
+                    $("#mensaje:first").addClass("is-invalid");
+                    mensaje = "debe completar el campo obligatorio de mensaje con un mínimo de 20 caracteres";
+                }
+
+                if (mensaje != "") {
+                    $("#alerta").html(mensaje);
+                    $("#alerta").show();
+                    event.preventDefault();
+                }
+
+                $("#reset").click(function () {
+                    $("#alerta").hide();
+                    $("#nombre").removeClass("is-invalid");
+                    $("#correo").removeClass("is-invalid");
+                    $("#mensaje").removeClass("is-invalid");
+                    var mensaje = "";
+                });
+            });
+        });
+    </script>
+    <title>Le Vegane</title>
+</head>
+
+<body class="body1">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Eighth navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logos/blancologo.png" width="145" height="35" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="iniciar-sesion.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="registrar.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                            aria-expanded="false">Más</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                            <li><a class="dropdown-item" href="lugares.html">Lugares Recomendados</a></li>
+                            <li><a class="dropdown-item" href="tips.html">Tips</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- carrusel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <header class="showcase showcase1-bckgrnd">
+                    <img src="images/logos/blancologo.png" width="400" height="105" alt="logo">
+                    <h2>Revisa nuestras últimas recetas!!</h2>
+                    <p>Te traemos las mejores recetas veganas/vegetarianas para que comas rico, saludable y de manera
+                        nutritiva. </p>
+                    <a href="recetas.html" class="btn btn-dark">Leer más <i class="fas fa-angle-double-right"></i></a>
+                </header>
+            </div>
+            <div class="carousel-item">
+                <header class="showcase showcase2-bckgrnd">
+                    <h2>¿Qué es Le Vegane?</h2>
+                    <p> Le Vegane nace como un proyecto entre tres compañeros que quieren fomentar la inclusión de
+                        dietas veganas y vegetarianas al público general. Sabemos que en la actualidad el planeta tierra
+                        está sufriendo muchos cambios a causa del calentamiento global, como también, vemos que la
+                        explotación de la especie animal para todos los fines es un acto de crueldad, provoca
+                        sufrimiento y dolor.</p>
+                </header>
+            </div>
+            <div class="carousel-item">
+                <header class="showcase showcase3-bckgrnd">
+                    <h2>Nuestro objetivo</h2>
+                    <p> Le Vegane busca ser un grano de arena en el proceso de cambiar el sistema y buscar un mundo
+                        mejor para todos los seres vivos. Y ¿Cómo? Compartiendo información, recetas y tips que permiten
+                        la fácil transición de una dieta carnívora a una de tipo vegana/vegetariana. Cada grano de arena
+                        que aportemos, suma a la lucha contra la crueldad y el cambio climático.</p>
+                </header>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- experimentando las tarjetas-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+                <!-- Blog post-->
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/noticias/unilever.png" alt="Card image cap" />
+                    <div class="card-body text-dark bg-light rounded-3">
+                        <h2 class="card-title">CEO de Unilever: «El mundo se está moviendo hacia una alimentación
+                            vegetariana»</h2>
+                        <p class="card-text">El director ejecutivo de Unilever, Alan Jope, admitio que el mundo está
+                            cambiando hacia una alimentación vegetariana, además describio la creciente demanda de
+                            alimentos de origen vegetal como una tendencia «sorprendente».</p>
+                        <a class="btn btn-outline-secondary" href="noticias/unilever.html">Leer Más→</a>
+                    </div>
+                </div>
+
+                <!-- CARD COMPACTAS-->
+                <div class="card-group">
+
+                    <div class="card">
+                        <img src="images/noticias/vegproducts.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">El mercado vegano europeo creció un 49% en 2 años, según nuevo
+                                informe</h5>
+                            <p class="card-text">Un reciente estudio revelo que el mercado vegano de Europa creció al
+                                menos un 49% en solo dos años, alcanzando un total de 3.600 millones de euros en ventas.
+                            </p>
+                        </div>
+                        <a class="btn btn-outline-secondary" href="noticias/mercadovegano.html">Leer Más →</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/noticias/beyond-meat.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Beyond Meat y Pepsi se unen para aumentar la accesibilidad global de
+                                la proteína vegetal</h5>
+                            <p class="card-text">La gigante vegana Beyond Meat se acaba de asociar con el gigante de
+                                alimentos y bebidas PepsiCo para aumentar la accesibilidad de proteínas de origen
+                                vegetal en todo el mundo</p>
+                        </div>
+                        <a class="btn btn-outline-secondary" href="noticias/beyond.html">Leer Más →</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/noticias/notestingonanimals1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">China ya no exigirá la experimentación con animales en cosméticos
+                                importados</h5>
+                            <p class="card-text">La Administración Nacional de Productos Médicos (NMPA), que regula los
+                                medicamentos y dispositivos médicos de la región, hizo el anuncio el anuncio en su web.
+                                En un reciente aviso, declaró que los cosméticos ordinarios importados ya no se
+                                probarían en animales a partir del 1 de mayo.</p>
+                        </div>
+                        <a class="btn btn-outline-secondary" href="noticias/china.html">Leer Más →</a>
+                    </div>
+                </div>
+                <hr>
+                <!-- CARD COMPACTAS-->
+                <div class="card-group">
+
+                    <div class="card">
+                        <img src="images/recetas/receta1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandwich de No-Pollo</h5>
+                            <p class="card-text">Delicioso Sandwich de no-pollo ideal para celebraciones o para picnics
+                                con tus seres queridos, totalmente vegan.</p>
+                        </div>
+                        <a class="btn btn-outline-secondary" href="recetasitios/sandwich-no-pollo.html">Leer Más →</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/recetas/receta2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ricotta de maní</h5>
+                            <p class="card-text">Esta maravillosa ricotta vegana pueden disfrutarla en un aperitivo con
+                                unas ricas bruschetas acompañadas de tomatitos cherry y ciboulette.</p>
+                        </div>
+                        <a class="btn btn-outline-secondary" href="recetasitios/ricotta-de-mani.html">Leer Más →</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/recetas/receta3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Harina de garbanzos</h5>
+                            <p class="card-text">Este ingrediente tiene diversos usos, ya que puede servir como remplazo
+                                de la harina de trigo y servir como espesante en preparaciones en vez del huevo.</p>
+                        </div>
+                        <a class="btn btn-outline-secondary" href="recetasitios/harina-de-garbanzos.html">Leer Más →</a>
+                    </div>
+                </div>
+                <!-- fin cards compactas-->
+                <hr>
+            </div>
+            <!-- Side cards-->
+            <div class="col-md-4">
+                <div class="h-40 p-5 text-white bg-dark rounded-3">
+                    <h3>Descubre nuestros lugares recomendados!</h3>
+                    <p>Le vegane te presenta los mejores lugares para comer con las 3B Bueno, Bonito y Barato.</p>
+                    <a class="btn btn-outline-secondary" href="lugares.html">Leer Más →</a>
+                </div>
+
+                <div class="h-40 p-5 bg-light border rounded-3">
+                    <h3>Infórmate con los últimos tips de la vida vegana</h3>
+                    <p>los mejores tips para que te cambies a la vida vegana</p>
+                    <a class="btn btn-outline-secondary" href="tips.html">Leer Más →</a>
+                </div>
+                <div class="h-40 p-5 text-white bg-dark rounded-3">
+                    <h3>Regístrate y se parte de la comunidad Le Vegane</h3>
+                    <p>Entérate de todo lo que tenemos para ti!</p>
+                    <a class="btn btn-outline-secondary" href="registrar.html">Leer Más →</a>
+                </div>
+                <div class="h-40 p-5 bg-light border rounded-3">
+                    <h3>Revisa las exclusivas recetas de Le Vegane</h3>
+                    <p>Para hacer tu vida vegana más fácil</p>
+                    <a class="btn btn-outline-secondary" href="recetas.html">Leer Más →</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="container form-contact">
+            <div class="row">
+                <form id="formulario" name="formulario" action="recibe.php" method="GET" enctype="multipart/form-data">
+                    <legend class="text-center">Contacto</legend>
+                    <!-- NOMBRE -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Aaaa Bbbb" />
+                        <label for="nombre" class="form-control-placeholder">Nombre completo*</label>
+                    </div>
+
+                    <!-- CORREO -->
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="correo" name="correo"
+                            placeholder="correo@correo.com" />
+                        <label for="correo">Correo electrónico *</label>
+                    </div>
+
+                    <!-- MENSAJE -->
+                    <div class="form-floating mb-3">
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Envíanos tus comentarios. *" minlength="10" style="height: 150px"></textarea>
+                        <label for="mensaje" class="form-label">Envíanos tus comentarios. *</label>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" id="enviar" name="enviar" value="Enviar" />
+                    <input type="reset" class="btn btn-secondary" id="reset" name="reset" value="Limpiar" />
+
+                    <div id="alerta" class="alert alert-danger" role="alert"></div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- ****************************************************************************** -->
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="m-0 text-center text-white">Copyright &copy; Le Vegane 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BOOTSTRAP Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

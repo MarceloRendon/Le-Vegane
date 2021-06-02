@@ -1,0 +1,33 @@
+{"categories":[{
+            "idCategory":"1",
+            "strCategory":"Govindas Restaurant Vegetariano",
+            "strCategoryThumb":"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d26632.92465313009!2d-70.70023680748217!3d-33.44629513918225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x418cb52479f3cebf!2sGovindas%20Restaurant%20Vegetariano!5e0!3m2!1ses!2scl!4v1622599063507!5m2!1ses!2scl",
+            "strCategoryDescription":"Buen lugar de comida vegetariana ubicado en Av. Ricardo Cumming 643, Santiago. Tiene comida para llevar.",
+            "strContacto":"https://www.facebook.com/govindas.santiago/"
+        },
+
+        {
+            "idCategory":"2",
+            "strCategory":"Vegan Dealer",
+            "strCategoryThumb":"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d26632.92465313009!2d-70.70023680748217!3d-33.44629513918225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a4c1d7c1442ad0b!2sVegan%20Dealer!5e0!3m2!1ses!2scl!4v1622600246330!5m2!1ses!2scl",
+            "strCategoryDescription":"Lugar increíble con una gran cantidad de comidas en el menú incluyendo delivery con Uber Eats, ubicado en Compañía de Jesús 2085, Santiago",
+            "strContacto":"https://vegan-dealer.business.site/?utm_source=gmb&utm_medium=referral"
+        },
+
+        {
+            "idCategory":"3",
+            "strCategory":"Almacén Vegano Ostara",
+            "strCategoryThumb":"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d26632.242971573847!2d-70.6786074739861!3d-33.44851524914262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5e95afdac1b6977!2sAlmac%C3%A9n%20Vegano%20Ostara!5e0!3m2!1ses!2scl!4v1622601271101!5m2!1ses!2scl",
+            "strCategoryDescription":"Un lugar que cuenta con una gran variedad de comidas, tienen empanadas, hamburguesas e incluso pasteles y quesos",
+            "strContacto":"https://m.facebook.com/almacenveganoostara/"
+        },
+
+        {
+            "idCategory":"4",
+            "strCategory":"El Huerto",
+            "strCategoryThumb":"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d26638.01483239697!2d-70.62619634511591!3d-33.42971325358524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5863e8992b59307!2sEl%20Huerto!5e0!3m2!1ses!2scl!4v1622601823150!5m2!1ses!2scl",
+            "strCategoryDescription":"Local de comida vegetariana con un local impresionante con delivery incluido disponible de Uber Eats, ubicado en Orrego Luco 54, Providencia",
+            "strContacto":"https://www.elhuerto.cl"
+        }
+    ]
+}
