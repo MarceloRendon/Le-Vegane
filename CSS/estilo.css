@@ -303,4 +303,21 @@ article img{
     background-color:#F00; /*whichever you want*/
     opacity: 0.5; 
     filter:(opacity=50);       
+<<<<<<< HEAD
+=======
+}
+
+/*
+    CSS FORMULARIO CONTACTO
+*/
+.form-contact{
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+
+.lugares{
+    padding-top: 100px;
+    color: #FFFFFF;
+>>>>>>> ramaUNO
 }

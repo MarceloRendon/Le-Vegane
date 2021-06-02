@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Archivos externos -->
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/estilo-menu.css" />
+    <link rel="stylesheet" href="CSS/LogIn-SignIn.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/bootstrap.css'>
+
+    <!-- CDN de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- cdn de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--icono sobre el titulo de la pagina-->
+    <link rel="shortcut icon" href="../images/logos/icono1.png">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            $("#alerta").hide();
+            var mensaje = "";
+
+            $("#formulario").submit(function () {
+                if ($("#nombre").val().trim().length == 0) {
+                    $("#nombre:first").addClass("is-invalid");
+                    mensaje = "Uno o más campos son incorrectos";
+                }
+
+                if ($("#apellido").val().trim().length == 0) {
+                    $("#apellido:first").addClass("is-invalid");
+                    mensaje = "Uno o más campos son incorrectos";
+                }
+
+                if ($("#correo").val().trim().length == 0) {
+                    $("#correo:first").addClass("is-invalid");
+                    mensaje = "Uno o más campos son incorrectos";
+                }
+
+                if ($("#password").val().trim().length == 0) {
+                    $("#password:first").addClass("is-invalid");
+                    mensaje = "Uno o más campos son incorrectos";
+                }
+
+                $("#gen").val(function () {
+                    var sel = $(this).children("option:selected").val();
+                    if (sel == "def" || sel == " ") {
+                        $("#gen:first").addClass("is-invalid");
+                        mensaje = "Uno o más campos son incorrectos";
+                    } else{
+                        mensaje = "";
+                    }
+                });
+
+                if (mensaje != "") {
+                    $("#alerta").html(mensaje);
+                    $("#alerta").show();
+                    event.preventDefault();
+                }
+            });
+
+            $("#reset").click(function () {
+                $("#alerta").hide();
+                $("#correo").removeClass("is-invalid");
+                $("#password").removeClass("is-invalid");
+                $("#nombre").removeClass("is-invalid");
+                $("#apellido").removeClass("is-invalid");
+                $("#gen").removeClass("is-invalid");
+                var mensaje = "";
+            });
+        });
+    </script>
+    <title>Le Vegane</title>
+</head>
+
+<body class="body1">
+    <!-- FORMULARIO -->
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <div class="col-md-8 col-xs-12 col-lg-4">
+                    <!-- FORM-->
+                    <div class="card mb-4">
+                        <a href="index.html"><img class="card-img-top img-card-form" src="images/logos/blancologo.png"
+                                width="10%" height="10%" alt="logo" /></a>
+                        <div class="card-body text-dark bg-light rounded-3">
+                            <h2 class="card-title text-center">Registrarse</h2>
+
+                            <form id="formulario" name="formulario" action="recibe.php" method="POST"
+                                enctype="multipart/form-data">
+                                <!-- CORREO -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="abc@abc.com" />
+                                    <label for="nombre" class="form-control-placeholder">Nombre*</label>
+                                </div>
+
+                                <!-- CORREO -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="apellido" name="apellido"
+                                        placeholder="abc@abc.com" />
+                                    <label for="apellido" class="form-control-placeholder">Apellido *</label>
+                                </div>
+
+                                <!-- CORREO -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="correo" name="correo"
+                                        placeholder="abc@abc.com" />
+                                    <label for="correo" class="form-control-placeholder">Correo*</label>
+                                </div>
+
+                                <!-- PASSWORD -->
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Abcd@" />
+                                    <label for="password">Contraseña *</label>
+                                </div>
+
+                                <!-- Género -->
+                                <div class="mb-3">
+                                    <select name="genero" id="gen" class="select-text form-select">
+                                        <option value="def" selected>--Seleccione género *--</option>
+                                        <option value="mas">Masculino</option>
+                                        <option value="fem">Femenino</option>
+                                        <option value="NA">Prefiero no responder</option>
+                                    </select>
+                                </div>
+
+                                <input type="submit" class="btn btn-primary col-12" id="enviar" name="enviar"
+                                    value="Registrarse" />
+                                <input type="reset" class="btn btn-secondary col-12" id="reset" name="reset"
+                                    value="Limpiar" />
+
+                                <div id="alerta" class="alert alert-danger" role="alert"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ****************************************************************************** -->
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="m-0 text-center text-white">Copyright &copy; Le Vegane 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
